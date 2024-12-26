@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.podio {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.podio .puesto {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #ffeb3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.podio .puesto:hover {
+    background-color: #ff9800;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fff;
+}
