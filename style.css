@@ -1,45 +1,99 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #202060;
+  color: #333;
+  text-align: center;
 }
 
 h1 {
-    text-align: center;
-    color: #333;
+  background-color: #6c63ff;
+  color: white;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 2.5rem;
+}
+
+.podios {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 50px;
+  gap: 30px;
 }
 
 .podio {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  width: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.podio .puesto {
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    background-color: #ffeb3b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #333;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+.podio:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.podio .puesto:hover {
-    background-color: #ff9800;
+.primer-lugar {
+  background: linear-gradient(135deg, #ffd700, #f2c94c);
+  color: #000;
+}
+
+.segundo-lugar {
+  background: linear-gradient(135deg, #c0c0c0, #d6d6d6);
+  color: #000;
+}
+
+.tercer-lugar {
+  background: linear-gradient(135deg, #cd7f32, #e09b53);
+  color: #000;
+}
+
+.nombre {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nombre:hover {
+  color: white;
+  background-color: #6c63ff;
 }
 
 a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #fff;
+  color: #ff5733;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #444;
 }
