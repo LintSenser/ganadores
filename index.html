@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganadores del Concurso</title>
+    <link rel="stylesheet" href="style.css"> <!-- Asegúrate de que el CSS esté en la misma carpeta -->
+</head>
+<body>
+    <h1>Podio de Ganadores</h1>
+
+    <div class="podio">
+        <!-- Aquí se llenarán los ganadores dinámicamente -->
+    </div>
+
+    <footer>
+        <p><a href="aportes.html">Ver aportes de los ganadores</a></p>
+    </footer>
+
+    <script>
+        // Datos de los ganadores
+        const ganadores = [
+            { nombre: "Juan Pérez", puesto: "Primer lugar" },
+            { nombre: "María Gómez", puesto: "Segundo lugar" },
+            { nombre: "Pedro López", puesto: "Tercer lugar" }
+        ];
+
+        // Función para mostrar los ganadores
+        function mostrarGanadores() {
+            const podio = document.querySelector('.podio');
+            ganadores.forEach(g => {
+                const div = document.createElement('div');
+                div.classList.add('puesto');
+                div.classList.add(g.puesto.toLowerCase().replace(' ', '-'));  // Crear una clase personalizada para cada puesto
+                div.innerHTML = `<a href="aportes.html">${g.puesto}: ${g.nombre}</a>`;
+                podio.appendChild(div);
+            });
+        }
+
+        // Llamamos a la función para mostrar los ganadores
+        mostrarGanadores();
+    </script>
+</body>
+</html>
